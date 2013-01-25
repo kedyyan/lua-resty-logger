@@ -16,3 +16,8 @@ log:info( 'I am info' )
 log:debug( 'I am debug' )
 
 log:error( "I am error' )
+
+Author
+======
+
+Yan "KedyYan" Chenguang(闫晨光) <kedyyan@gmail.com>
