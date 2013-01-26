@@ -9,8 +9,9 @@ local bor = bit.bor
 
 local setmetatable = setmetatable
 local localtime 	= ngx.localtime()
---local nx 			= ngx
---local tp  			= type
+local ngx 			= ngx
+local type 			= type
+
 
 ffi.cdef[[
 int write(int fd, const char *buf, int nbyte);
@@ -37,9 +38,10 @@ _VERSION = '0.1'
 
 local mt = { __index = _M }
 
-function new(self, level, logfile)
+function new(self, log_type, logfile)
 	local log_level, log_fd = nil
 
+	local level = nil
 	if 'debug' == log_type then 
 		level = LVL_DEBUG
 	elseif 'info' == log_type then 
