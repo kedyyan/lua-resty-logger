@@ -20,4 +20,4 @@ log:error( "I am error' )
 Author
 ======
 
-Yan "KedyYan" Chenguang(闫晨光) <kedyyan@gmail.com>
+Yan "kedyyan" Chenguang(闫晨光) <kedyyan@gmail.com>
